@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Securefy - Segurança Digital</title>
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {
+    font-family: Arial;
+    background:#0f172a;
+    color:white;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#020617;
+}
+
+header a {
+    background:#22c55e;
+    padding:10px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+}
+
+.hero {
+    text-align:center;
+    padding:60px 20px;
+}
+
+.btn {
+    display:block;
+    margin:10px auto;
+    padding:12px;
+    width:90%;
+    max-width:280px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.btn-pagar {background:#22c55e;}
+.btn-whats {background:#3b82f6;}
+
+.planos {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:40px 20px;
+}
+
+.card {
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    width:280px;
+    text-align:center;
+}
+
+.destaque {
+    border:2px solid #22c55e;
+}
+
+button {
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    background:#3b82f6;
+    color:white;
+}
+
+.detalhes {
+    display:none;
+    margin-top:15px;
+}
+
+.detalhes ul {
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.prova {
+    text-align:center;
+    padding:40px 20px;
+}
+
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#22c55e;
+    padding:15px;
+    border-radius:50%;
+    color:white;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>🔐 Securefy</h2>
+<a href="https://wa.me/67991642300?text=Olá,%20quero%20informações">Contato</a>
+</header>
+
+<section class="hero">
+<h1>Proteja sua internet contra golpes e invasões</h1>
+<p>Instalação em minutos</p>
+
+<a href="https://wa.me/67991642300?text=Quero%20proteger%20minha%20internet" class="btn btn-whats">
+Falar no WhatsApp
+</a>
+</section>
+
+<section class="planos">
+
+<!-- BASICO -->
+<div class="card">
+<h3>Básico</h3>
+<p>R$19/mês</p>
+
+<button onclick="toggle('b')">Ver detalhes</button>
+
+<div id="b" class="detalhes">
+<ul>
+<li>✔ Bloqueio de anúncios</li>
+<li>✔ Proteção contra sites perigosos</li>
+<li>✔ Navegação mais rápida</li>
+<l
+</ul>
+
+<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar agora</a>
+
+<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Básico" class="btn btn-whats">
+Dúvidas
+</a>
+</div>
+</div>
+
+<!-- PRO -->
+<div class="card">
+<h3>Pro</h3>
+<p>R$39/mês</p>
+
+<button onclick="toggle('p')">Ver detalhes</button>
+
+<div id="p" class="detalhes">
+<ul>
+<li>✔ Tudo do Básico</li>
+<li>✔ Anti-phishing</li>
+<li>✔ Controle parental</li>
+<li>✔ Bloqueio de sites adultos</li>
+<li>✔ Bloqueio de jogos online</li>
+<li>✔ Segurança em tempo real</li>
+
+</ul>
+
+<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar agora</a>
+
+<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Pro" class="btn btn-whats">
+Dúvidas
+</a>
+</div>
+</div>
+
+<!-- PREMIUM -->
+<div class="card">
+<h3>Premium</h3>
+<p>R$79/mês</p>
+
+<button onclick="toggle('pr')">Ver detalhes</button>
+
+<div id="pr" class="detalhes">
+<ul>
+<li>✔ Tudo do Pro</li>
+<li>✔ Monitoramento completo</li>
+<li>✔ Suporte prioritário</li>
+<li>✔ Configuração personalizada</li>
+<li>✔ Relatórios de bloqueios realizados</li>
+
+</ul>
+
+<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar agora</a>
+
+<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Premium" class="btn btn-whats">
+Dúvidas
+</a>
+</div>
+</div>
+
+</section>
+
+<section class="prova">
+<h2>Proteção em tempo real</h2>
+<p>🔒 ameaças bloqueadas   </p>
+<p>🚫 anúncios removidos  </p>
+<p>⚡ Internet mais rápida</p>
+<p>🔐 Relatórios de bloqueios  </p>
+</section>
+
+<a href="https://wa.me/67991642300" class="whatsapp">💬</a>
+<a
+<a href="https://wa.me/?text=Quero%20pagar%20via%20PIX" class="btn btn-whats">
+Pagar via PIX
+</a>
+
+<script>
+function toggle(id){
+    let el = document.getElementById(id);
+    el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
