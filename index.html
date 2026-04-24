@@ -21,17 +21,26 @@ header {
     background:#020617;
 }
 
-header a {
-    background:#22c55e;
-    padding:10px;
-    border-radius:8px;
-    color:white;
-    text-decoration:none;
+.btn-securefy {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .hero {
     text-align:center;
-    padding:20px 20px;
+    padding:30px 20px;
+}
+
+.divider {
+    height:2px;
+    background:#22c55e;
+    margin:20px auto;
+    width:80%;
 }
 
 .btn {
@@ -63,10 +72,6 @@ header a {
     border-radius:12px;
     width:280px;
     text-align:center;
-}
-
-.destaque {
-    border:2px solid #22c55e;
 }
 
 button {
@@ -103,19 +108,7 @@ button {
     border-radius:50%;
     color:white;
     text-decoration:none;
-}
-
-.btn-securefy {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background-color: transparent;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 25px;
+    font-size:20px;
 }
 </style>
 </head>
@@ -123,22 +116,20 @@ button {
 <body>
 
 <header>
-<a href="https://securefy.com.br" class="btn-securefy">🔐 Securefy</a>
+<a href="#" class="btn-securefy">🔐 Securefy</a>
 </header>
 
 <section class="hero">
 <h1>Proteja sua internet contra golpes e invasões!</h1>
 <p>Desenvolvido por especialistas em segurança digital</p>
-<p></p>
-<p> ______________________________________________________________________________</p>
-<h1>Confira os planos</h1>
 
-</a>
+<div class="divider"></div>
+
+<h2>Confira os planos</h2>
 </section>
 
 <section class="planos">
 
-<!-- BASICO -->
 <div class="card">
 <h3>Básico</h3>
 <p>R$19/mês</p>
@@ -150,18 +141,13 @@ button {
 <li>✔ Bloqueio de anúncios</li>
 <li>✔ Proteção contra sites perigosos</li>
 <li>✔ Navegação mais rápida</li>
-<l
 </ul>
 
-<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar via mercado pago</a>
-
-<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Básico" class="btn btn-whats">
-Dúvidas
-</a>
+<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar</a>
+<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Básico" class="btn btn-whats">Dúvidas</a>
 </div>
 </div>
 
-<!-- PRO -->
 <div class="card">
 <h3>Pro</h3>
 <p>R$39/mês</p>
@@ -174,20 +160,14 @@ Dúvidas
 <li>✔ Anti-phishing</li>
 <li>✔ Controle parental</li>
 <li>✔ Bloqueio de sites adultos</li>
-<li>✔ Bloqueio de jogos online</li>
-<li>✔ Segurança em tempo real</li>
-
+<li>✔ Bloqueio de jogos</li>
 </ul>
 
-<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar via mercado pago</a>
-
-<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Pro" class="btn btn-whats">
-Dúvidas
-</a>
+<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar</a>
+<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Pro" class="btn btn-whats">Dúvidas</a>
 </div>
 </div>
 
-<!-- PREMIUM -->
 <div class="card">
 <h3>Premium</h3>
 <p>R$79/mês</p>
@@ -199,16 +179,11 @@ Dúvidas
 <li>✔ Tudo do Pro</li>
 <li>✔ Monitoramento completo</li>
 <li>✔ Suporte prioritário</li>
-<li>✔ Configuração personalizada</li>
-<li>✔ Relatórios de bloqueios realizados</li>
-
+<li>✔ Relatórios</li>
 </ul>
 
-<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar via mercado pago</a>
-
-<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Premium" class="btn btn-whats">
-Dúvidas
-</a>
+<a href="https://link.mercadopago.com.br/securefyseguranca" class="btn btn-pagar">Pagar</a>
+<a href="https://wa.me/67991642300?text=Quero%20o%20Plano%20Premium" class="btn btn-whats">Dúvidas</a>
 </div>
 </div>
 
@@ -216,18 +191,12 @@ Dúvidas
 
 <section class="prova">
 <h2>Proteção em tempo real</h2>
-<p>🔒 ameaças bloqueadas   </p>
-<p>🚫 anúncios removidos  </p>
-<p>⚡ Internet mais rápida</p>
-<p>⚡ Instalação em minutos</p>
-<p>🔐 Relatórios de bloqueios  </p>
+<p>🔒 ameaças bloqueadas</p>
+<p>🚫 anúncios removidos</p>
+<p>⚡ internet mais rápida</p>
 </section>
 
 <a href="https://wa.me/67991642300" class="whatsapp">💬</a>
-<a
-<a href="https://wa.me/?text=Quero%20pagar%20via%20PIX" class="btn btn-whats">
-Pagar via PIX
-</a>
 
 <script>
 function toggle(id){
